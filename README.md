@@ -52,7 +52,7 @@ The ability of Node. js to simultaneously handle multiple requests and provide p
     
 ### Frontend Language
 
-Coming to Front-End, we have thought of using HTML, CSS and JavaScript. We have accessed factors like:
+Coming to Front-End, we have thought of using ejs layouts We have accessed factors like:
 
     •	Expertise on Technology.
     •	Available time to deliver.
