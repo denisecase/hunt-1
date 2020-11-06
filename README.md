@@ -39,7 +39,7 @@ Considering requirements provided in RFP, we have put our effort in selecting pr
 
 ### Backend Language
 
-Coming to backend language, we have decided to use Node.js as it is light-weight and efficient when it comes to real-time applications that should run across distributed devices like:
+Coming to backend language, we have decided to use Node.js, express framework as it is light-weight and efficient when it comes to real-time applications that should run across distributed devices like:
 
     •	an iPhone SE
     •	an Android device
