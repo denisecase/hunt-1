@@ -67,7 +67,7 @@ And it is very secure and it has a Quickly Reacting Features and Apps
 
 ### Framework
 
-By using this framework it has Nestbuilding efficient and  scalable Node. js server-side applications because it uses  modern JavaScript, is built with TypeScript
+Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
 
 ### API's 
 
@@ -78,3 +78,5 @@ For accessing the location we have various API’s like Google Maps and Mapbox. 
  Here for testing we are using Cypress. Cypress is purely javascript based front end testing tool.
  
  Using Cypress, developers can create:
+ 
+ Unit tests Integration tests End to End tests
