@@ -14,7 +14,7 @@
 We can also clone the repository using github desktop.
 
 ## Instructions to start the The-Hunt project
-  * Steps for starting the cloned repository using the Powershell.
+    * Steps for starting the cloned repository using the Powershell.
     * Open PS as admin using the Powershell in the-Hunt Folder.
     * Use "npm install" to install modules.
     * Use "npm run dev" to start a local version.
@@ -25,7 +25,7 @@ Link: https://desktop.github.com/
 ## Heroku Link:
    Here is hosted link of our application on heroku.
    
-   https://hunt2020.herokuapp.com/
+  https://hunt-1.herokuapp.com/
 
 # The-Hunt
 “The Hunt game” is an outdoor collaborative game which allows the authorized users to play with other team members or to compete with other players in finding the hidden locations in a quest. We are designing this game in view that this is compatible with iPhone SE, Laptop, Tablet, and Android phones. 
