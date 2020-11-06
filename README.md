@@ -67,8 +67,6 @@ And it is very secure and it has a Quickly Reacting Features and Apps
 
 ### Framework
 
-Regarding frameworks, as per our client suggestion we thought of using NestJS. This will also help us to organize our code by providing a proper structure.
-
 By using this framework it has Nestbuilding efficient and  scalable Node. js server-side applications because it uses  modern JavaScript, is built with TypeScript
 
 ### API's 
