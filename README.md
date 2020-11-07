@@ -1,5 +1,17 @@
 # hunt-1
 
+# Group Members
+
+Krishna Sumanth Koyyalamudi
+
+Prasad Golla Durga
+
+Pruthvi Nashkanti
+
+Vishal Reddy Vennavaram
+
+Saikrishna Emmadishetty
+
 ## Instructions for cloning repository:
   * Steps for cloning repository using command line
     * On GitHub, navigate to the main page of the repository
