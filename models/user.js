@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-const { model } = require("./team");
 
 const userSchema = new mongoose.Schema({
         userid: {
