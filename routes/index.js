@@ -14,15 +14,15 @@ router.get('/', function(req, res, next) {
 });
 
 // GET Login as home page.
-router.get('/login',user_controller.login);
+router.get('/user/login',user_controller.login);
 
-router.get('/register',user_controller.register);
+router.get('/user/register',user_controller.register);
 
-router.get('/forgotemail',user_controller.forgot1);
+router.get('/user/forgotemail',user_controller.forgot1);
 
-router.get('/forgotcode',user_controller.forgot2);
+router.get('/user/forgotcode',user_controller.forgot2);
 
-router.get('/newpassword',user_controller.forgot3);
+router.get('/user/newpassword',user_controller.forgot3);
 
 
 
