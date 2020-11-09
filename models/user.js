@@ -3,7 +3,7 @@ const { model } = require("./team");
 
 const userSchema = new mongoose.Schema({
         userid: {
-            type: NumberInt,
+            type: Number,
             unique: true,
             required: true,
         },

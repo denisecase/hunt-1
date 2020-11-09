@@ -3,11 +3,12 @@ const express = require("express");
 const app = express();
 
 const User = require('../models/user');
+var exports = module.exports = {};
 
-const async = require('async');
+//const async = require('async');
 
-exports.loginPage = function(req, res) {
-    res.render('user/login');
+exports.login = function(req, res) {
+    res.render('user/loginpage');
 }
 
 exports.register = function(req, res) {

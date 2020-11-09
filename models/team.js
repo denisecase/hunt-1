@@ -2,7 +2,7 @@ const mongoose = require("mongoose")
 
 const teamSchema = new mongoose.Schema({
     teamid: {
-        type: NumberInt,
+        type: Number,
         unique: true,
         required: true,
     },
