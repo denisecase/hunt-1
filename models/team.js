@@ -6,17 +6,26 @@ const teamSchema = new mongoose.Schema({
         unique: true,
         required: true,
     },
-    creatoruserid: [
-        { type: mongoose.Schema.Types.ObjectId, ref: 'User' }
-    ],
+    creatoruserid: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User',
+        required: true
+    },
     teamname: {
         type: String,
-        unique: true
+        unique: true,
+        required: true
     },
 },
-{ timestamps: true },
+    { timestamps: true },
 );
 
-const User = mongoose.model('Team', userSchema);
+// Virtual for this team instance URL.
+teamSchema
+    .virtual('url')
+    .get(function () {
+        return '';
+    });
 
-export default User;
+// Export model.
+module.exports = mongoose.model('Team', teamSchema);

@@ -3,23 +3,28 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-var mongoose = require('mongoose');
+const dotenv = require('dotenv');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
+const compression = require('compression');
+const helmet = require('helmet');
+
 var app = express();
+app.use(helmet());
+//Compress all routes
+app.use(compression());
+app.use(express.static(path.join(__dirname, 'public')));
+dotenv.config({ path: '.env' })
 
-// Connect to NoSQL datastore
-
-//Set up default mongoose connection
-var mongoDB = 'mongodb://127.0.0.1/my_database';
-mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true});
-
-//Get the default connection
-var db = mongoose.connection;
-
-//Bind connection to error event (to get notification of connection errors)
+// Set up mongoose connection
+const mongoose = require('mongoose');
+const dev_db_url = process.env.ATLAS_URI;
+const mongoDB = process.env.MONGODB_URI || dev_db_url;
+mongoose.connect(mongoDB, { useNewUrlParser: true ,useUnifiedTopology: true});
+mongoose.Promise = global.Promise;
+const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 // view engine setup
@@ -30,6 +35,8 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(helmet());
+app.use(compression());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);

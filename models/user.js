@@ -1,4 +1,5 @@
-const mongoose = require("mongoose")
+const mongoose = require("mongoose");
+const { model } = require("./team");
 
 const userSchema = new mongoose.Schema({
         userid: {
@@ -11,6 +12,11 @@ const userSchema = new mongoose.Schema({
     { timestamps: true },
 );
 
-const User = mongoose.model('User', userSchema);
+// Virtual for this team instance URL.
+userSchema
+    .virtual('url')
+    .get(function () {
+        return '';
+    });
 
-export default User;
+model.exports = mongoose.model('User', userSchema);
