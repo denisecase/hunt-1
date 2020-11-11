@@ -26,4 +26,15 @@ router.get('/user/newpass',user_controller.forgot3);
 
 router.get('/dashboard',user_controller.dashboard);
 
+
+/// Team Routes ///
+
+router.get('/team/index',team_controller.teams);
+
+router.get('/team/create',team_controller.create);
+
+router.get('/team/tinvite',team_controller.tinvite);
+
+router.get('/team/pinvite',team_controller.pinvite);
+
 module.exports = router;
