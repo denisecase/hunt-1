@@ -37,13 +37,14 @@
         function goToResetPassword() {
             var re = /\S+@\S+\.\S+/;
             var x = document.getElementById('email').value;
+            console.log(x);
             if (document.getElementById("email").value == "") {
                 alert("Please provide Email address")
             } else {
                 if (re.test(x) != true) {
                     alert("Please enter valid email address")
                 } else {
-                    window.location="/user/forgotcode"
+                    window.location = "/forgotcode"
                 }
             }
         }

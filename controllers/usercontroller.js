@@ -27,6 +27,10 @@ exports.forgot3 = function(req, res) {
     res.render('user/newpassword');
 }
 
+exports.dashboard = function(req, res) {
+    res.render('layout');
+}
+
 exports.logout = function (req, res) {
     req.session.destroy(function (err) {
         res.redirect('/');

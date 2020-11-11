@@ -18,12 +18,12 @@ router.get('/user/login',user_controller.login);
 
 router.get('/user/register',user_controller.register);
 
-router.get('/user/forgotemail',user_controller.forgot1);
+router.get('/user/forgot1',user_controller.forgot1);
 
-router.get('/user/forgotcode',user_controller.forgot2);
+router.get('/user/forgot2',user_controller.forgot2);
 
-router.get('/user/newpassword',user_controller.forgot3);
+router.get('/user/newpass',user_controller.forgot3);
 
-
+router.get('/dashboard',user_controller.dashboard);
 
 module.exports = router;

@@ -18,6 +18,14 @@ app.use(compression());
 app.use(express.static(path.join(__dirname, 'public')));
 dotenv.config({ path: '.env' })
 
+// // log port (Heroku issue)
+// const port = process.env.PORT || 3004
+// console.log(`Running on ${port}`)
+
+// // Are we in production or development?
+// const isProduction = process.env.NODE_ENV === 'production'
+// console.log(`Environment isProduction = ${isProduction}`)
+
 // Set up mongoose connection
 const mongoose = require('mongoose');
 const dev_db_url = process.env.ATLAS_URI;
@@ -57,5 +65,16 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+// // call app.listen to start server
+// const host = app.get('host')
+// const env = isProduction ? 'production' : 'development'
+
+const port = process.env.PORT || 3000
+app.listen(port, () => {
+  //console.log(`\nApp running at http://${host}:${port}/ with ${env} data`)
+  console.log(`Running on ${port}`)
+  console.log('Press CTRL-C to stop\n')
+})
 
 module.exports = app;
