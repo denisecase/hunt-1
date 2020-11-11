@@ -70,11 +70,11 @@ app.use(function(err, req, res, next) {
 // const host = app.get('host')
 // const env = isProduction ? 'production' : 'development'
 
-const port = process.env.PORT || 3000
-app.listen(port, () => {
-  //console.log(`\nApp running at http://${host}:${port}/ with ${env} data`)
-  console.log(`Running on ${port}`)
-  console.log('Press CTRL-C to stop\n')
-})
+// const port = process.env.PORT || 3000
+// app.listen(port, () => {
+//   //console.log(`\nApp running at http://${host}:${port}/ with ${env} data`)
+//   console.log(`Running on ${port}`)
+//   console.log('Press CTRL-C to stop\n')
+// })
 
 module.exports = app;
