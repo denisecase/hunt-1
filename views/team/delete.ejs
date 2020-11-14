@@ -1,19 +1,40 @@
-/**
- * @delete.ejs
- *
- *
- * @author Swaroop Reddy
- * This is the delete team partial page.
- */
-
- 
- <form>
-    <div class="container">
-        <div class="form-group">
-            <input class="col-25 d-flex align-items-center mx-auto mt-5 p-1 flex-column col-lg-4 bg-white" type=" email"
-                placeholder="Team Maverics">
-            </input>
-        </div>
-        <button type="delete"  class="col-25 d-flex align-items-center mx-auto mt-5 p-1 flex-column col-lg-4" style="background-color: #00674c; color: white; padding: 0px;border-radius: 6px;align-self: center; height: 30px;width: 120px;justify-content: center;" value="teamSubmit" id="teamSubmit">Submit
-        </div>
-</form>
+<!--
+*  Team delete view
+*  Uses HTML and embedded JavaScript (EJS) 
+*  to dyanmically create a webpage to delete a team.
+*
+* @author Denise Case <dcase@nwmissouri.edu>
+-->
+  
+<% if (team.error) { %>
+    <div class="alert alert-danger" role="alert"><%- team.error %></div>
+    <% } %>
+    
+    <div class="card-body">
+    
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Team Id</th>
+            <th scope="col">IsCreated</th>
+            <th width=>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+    
+          <tr>
+            <th scope="row"><%= team.id %></th>
+            <td><%= team.name%></td>
+            <td><%= team.age%></td>
+            <td><%= team.isCreated%></td>
+            <td>
+              <form action="/team/delete/<%=team.id%>" method="post">
+                <input type="submit" class="btn btn-danger delete" value="Delete" onclick="return alert('Are You sure?')"/>
+              </form>
+            </td>
+          </tr>
+    
+        </tbody>
+      </table>

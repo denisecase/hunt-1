@@ -1,17 +1,15 @@
-/**
- * @create.ejs - create new
- *
- * This is the layout for team Create page.
- * @author Swaroop Reddy Gottigundala
- */
-
- <form>
-    <div class="container">
-        <div class="form-group">
-            <input class="col-25 d-flex align-items-center mx-auto mt-5 p-1 flex-column col-lg-4 bg-white" type=" email"
-                placeholder="Enter Team Name">
-            </input>
-        </div>
-        <button type="submit"  class="col-25 d-flex align-items-center mx-auto mt-5 p-1 flex-column col-lg-4" style="background-color: #00674c; color: white; padding: 0px;border-radius: 6px;align-self: center; height: 30px;width: 120px;justify-content: center;" value="teamSubmit" id="teamSubmit">Submit
-        </div>
-</form>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Team</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Add New Team</h1>
+    <form id="formAddTeam" name="addteam" method="post" action="/team/addTeam">
+      <input id="inputTeamId" type="text" placeholder="TeamId" name="teamid" />
+      <input id="inputTeamName" type="text" placeholder="TeamName" name="teamname" />
+      <button id="btnSubmit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>

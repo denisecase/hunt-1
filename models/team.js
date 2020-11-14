@@ -1,5 +1,5 @@
 const mongoose = require("mongoose")
-const { model } = require("./user");
+//const { model } = require("./user");
 
 const teamSchema = new mongoose.Schema({
     teamid: {
@@ -7,26 +7,24 @@ const teamSchema = new mongoose.Schema({
         unique: true,
         required: true,
     },
-    creatoruserid: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'User',
-        required: true
-    },
+    // creatoruserid: {
+    //     type: mongoose.Schema.Types.ObjectId,
+    //     ref: 'User',
+    //     required: true
+    // },
     teamname: {
         type: String,
         unique: true,
         required: true
-    },
-},
-    { timestamps: true },
-);
+    }
+});
 
-// Virtual for this team instance URL.
-teamSchema
-    .virtual('url')
-    .get(function () {
-        return '';
-    });
+// // Virtual for this team instance URL.
+// teamSchema
+//     .virtual('url')
+//     .get(function () {
+//         return '';
+//     });
 
 // Export model.
 module.exports = mongoose.model('Team', teamSchema);

@@ -32,7 +32,9 @@ const dev_db_url = process.env.ATLAS_URI;
 const mongoDB = process.env.MONGODB_URI || dev_db_url;
 mongoose.connect(mongoDB, { useNewUrlParser: true ,useUnifiedTopology: true});
 mongoose.Promise = global.Promise;
-const db = mongoose.connection;
+const db = mongoose.connection.on('connected',() =>{
+  console.log('Mongoose is connected !');
+});
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 // view engine setup
@@ -46,6 +48,12 @@ app.use(cookieParser());
 app.use(helmet());
 app.use(compression());
 app.use(express.static(path.join(__dirname, 'public')));
+
+// // Make our db accessible to our router
+// app.use(function(req,res,next){
+//   req.db = db;
+//   next();
+// });
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);

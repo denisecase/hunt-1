@@ -1,8 +1,5 @@
-/**
- * @   .ejs
- *
- *
- * @author Chandrakanth
- */
-
- <p> This lists all partial page.</p>
+<ul>
+    <%for (var team in teams){%>
+      <li><%=team%>:<%=teams[team]%></li>    
+      <%}%>
+    </ul>
