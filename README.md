@@ -12,6 +12,12 @@ Vishal Reddy Vennavaram
 
 Saikrishna Emmadishetty
 
+## Routes to verify db access
+ * List of users in db : https://hunt-1.herokuapp.com/user/index
+ * Add a new user : https://hunt-1.herokuapp.com/user/newuser
+ * List of teams in db : https://hunt-1.herokuapp.com/team/index
+ * Create a new team : https://hunt-1.herokuapp.com/team/create
+
 ## Instructions for cloning repository:
   * Steps for cloning repository using command line
     * On GitHub, navigate to the main page of the repository
