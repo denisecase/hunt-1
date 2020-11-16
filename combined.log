@@ -1,0 +1,92 @@
+info: START data seeder. {"timestamp":"2020-11-16T12:31:39.975Z"}
+info: 2 teams seeded {"timestamp":"2020-11-16T12:31:39.988Z"}
+info: END Data Seeder. Sample data read and verified. {"timestamp":"2020-11-16T12:31:39.989Z"}
+info: START data seeder. {"timestamp":"2020-11-16T12:54:23.010Z"}
+info: START data seeder. {"timestamp":"2020-11-16T12:58:48.042Z"}
+info: START data seeder. {"timestamp":"2020-11-16T13:05:53.260Z"}
+info: START data seeder. {"timestamp":"2020-11-16T13:06:30.313Z"}
+info: START data seeder. {"timestamp":"2020-11-16T13:07:07.431Z"}
+info: START data seeder. {"timestamp":"2020-11-16T13:12:28.812Z"}
+info: START data seeder. {"timestamp":"2020-11-16T13:14:38.634Z"}
+info: START data seeder. {"timestamp":"2020-11-16T13:15:30.974Z"}
+info: START data seeder. {"timestamp":"2020-11-16T13:16:01.191Z"}
+info: Created new item: { _id: 5fb27b91f766592f88e38243, teamname: 'Vikings' } {"timestamp":"2020-11-16T13:16:01.206Z"}
+info: undefined teams seeded {"timestamp":"2020-11-16T13:16:01.211Z"}
+info: END Data Seeder. Sample data read and verified. {"timestamp":"2020-11-16T13:16:01.215Z"}
+error: Team validation failed: teamid: Path `teamid` is required. {"errors":{"teamid":{"name":"ValidatorError","message":"Path `teamid` is required.","properties":{"message":"Path `teamid` is required.","type":"required","path":"teamid"},"kind":"required","path":"teamid"}},"_message":"Team validation failed","timestamp":"2020-11-16T13:16:01.228Z"}
+info: START data seeder. {"timestamp":"2020-11-16T13:16:39.983Z"}
+info: Created new item: { _id: 5fb27bb77ad33c1eb8f3a1d8, teamid: 1, teamname: 'Vikings' } {"timestamp":"2020-11-16T13:16:39.998Z"}
+info: undefined teams seeded {"timestamp":"2020-11-16T13:16:40.005Z"}
+info: END Data Seeder. Sample data read and verified. {"timestamp":"2020-11-16T13:16:40.006Z"}
+info: Saved new item: {
+  _id: 5fb27bb77ad33c1eb8f3a1d8,
+  teamid: 1,
+  teamname: 'Vikings',
+  __v: 0
+} {"timestamp":"2020-11-16T13:16:40.119Z"}
+info: START data seeder. {"timestamp":"2020-11-16T13:18:27.503Z"}
+info: Created new item: { _id: 5fb27c2301cde4381c0a5610, teamid: 1, teamname: 'Vikings' } {"timestamp":"2020-11-16T13:18:27.517Z"}
+info: END Data Seeder. Sample data read and verified. {"timestamp":"2020-11-16T13:18:27.522Z"}
+info: START data seeder. {"timestamp":"2020-11-16T13:19:31.787Z"}
+info: Created new item: { _id: 5fb27c63bff67d360c027af1, teamid: 1, teamname: 'Vikings' } {"timestamp":"2020-11-16T13:19:31.801Z"}
+info: END Data Seeder. Sample data read and verified. {"timestamp":"2020-11-16T13:19:31.805Z"}
+info: 1 teams seeded {"timestamp":"2020-11-16T13:19:31.924Z"}
+error: E11000 duplicate key error collection: hunt.teams index: teamid_1 dup key: { teamid: 1 } {"driver":true,"name":"MongoError","index":0,"code":11000,"keyPattern":{"teamid":1},"keyValue":{"teamid":1},"timestamp":"2020-11-16T13:19:31.972Z"}
+info: START data seeder. {"timestamp":"2020-11-16T13:21:17.438Z"}
+info: Created new item: { _id: 5fb27ccdea40843514c0f82c, teamid: 1, teamname: 'Vikings' } {"timestamp":"2020-11-16T13:21:17.451Z"}
+info: END Data Seeder. Sample data read and verified. {"timestamp":"2020-11-16T13:21:17.456Z"}
+info: Found items: {
+  _id: 5fb27bb77ad33c1eb8f3a1d8,
+  teamid: 1,
+  teamname: 'Vikings',
+  __v: 0
+} {"timestamp":"2020-11-16T13:21:17.586Z"}
+info: 1 teams seeded {"timestamp":"2020-11-16T13:21:17.587Z"}
+error: E11000 duplicate key error collection: hunt.teams index: teamid_1 dup key: { teamid: 1 } {"driver":true,"name":"MongoError","index":0,"code":11000,"keyPattern":{"teamid":1},"keyValue":{"teamid":1},"timestamp":"2020-11-16T13:21:17.640Z"}
+info: START data seeder. {"timestamp":"2020-11-16T13:21:56.713Z"}
+info: Created new item: { _id: 5fb27cf44f00271e205e5d70, teamid: 1, teamname: 'Vikings' } {"timestamp":"2020-11-16T13:21:56.728Z"}
+info: END Data Seeder. Sample data read and verified. {"timestamp":"2020-11-16T13:21:56.732Z"}
+info: Found items: {
+  _id: 5fb27bb77ad33c1eb8f3a1d8,
+  teamid: 1,
+  teamname: 'Vikings',
+  __v: 0
+} {"timestamp":"2020-11-16T13:21:56.845Z"}
+info: 1 teams seeded {"timestamp":"2020-11-16T13:21:56.846Z"}
+error: E11000 duplicate key error collection: hunt.teams index: teamid_1 dup key: { teamid: 1 } {"driver":true,"name":"MongoError","index":0,"code":11000,"keyPattern":{"teamid":1},"keyValue":{"teamid":1},"timestamp":"2020-11-16T13:21:56.907Z"}
+info: START data seeder. {"timestamp":"2020-11-16T13:23:31.009Z"}
+info: Created new item: { _id: 5fb27d53225cad18385480b2, teamid: 1, teamname: 'Vikings' } {"timestamp":"2020-11-16T13:23:31.028Z"}
+info: undefined teams seeded {"timestamp":"2020-11-16T13:23:31.034Z"}
+info: END Data Seeder. Sample data read and verified. {"timestamp":"2020-11-16T13:23:31.034Z"}
+error: E11000 duplicate key error collection: hunt.teams index: teamid_1 dup key: { teamid: 1 } {"driver":true,"name":"MongoError","index":0,"code":11000,"keyPattern":{"teamid":1},"keyValue":{"teamid":1},"timestamp":"2020-11-16T13:23:31.155Z"}
+info: START data seeder. {"timestamp":"2020-11-16T13:24:18.339Z"}
+info: Created new item: { _id: 5fb27d82432dfd2c9083f22f, teamid: 1, teamname: 'Vikings' } {"timestamp":"2020-11-16T13:24:18.354Z"}
+info: END Data Seeder. Sample data read and verified. {"timestamp":"2020-11-16T13:24:18.357Z"}
+error: E11000 duplicate key error collection: hunt.teams index: teamid_1 dup key: { teamid: 1 } {"driver":true,"name":"MongoError","index":0,"code":11000,"keyPattern":{"teamid":1},"keyValue":{"teamid":1},"timestamp":"2020-11-16T13:24:18.481Z"}
+info: START data seeder. {"timestamp":"2020-11-16T13:25:32.200Z"}
+info: Created new item: { _id: 5fb27dcc5da0b91e20773a61, teamid: 1, teamname: 'Vikings' } {"timestamp":"2020-11-16T13:25:32.213Z"}
+info: END Data Seeder. Sample data read and verified. {"timestamp":"2020-11-16T13:25:32.216Z"}
+error: E11000 duplicate key error collection: hunt.teams index: teamid_1 dup key: { teamid: 1 } {"driver":true,"name":"MongoError","index":0,"code":11000,"keyPattern":{"teamid":1},"keyValue":{"teamid":1},"timestamp":"2020-11-16T13:25:32.328Z"}
+info: START data seeder. {"timestamp":"2020-11-16T13:31:06.215Z"}
+info: END Data Seeder. Sample data read and verified. {"timestamp":"2020-11-16T13:31:06.229Z"}
+info: START data seeder. {"timestamp":"2020-11-16T13:31:29.151Z"}
+info: END Data Seeder. Sample data read and verified. {"timestamp":"2020-11-16T13:31:29.163Z"}
+error: E11000 duplicate key error collection: hunt.teams index: teamname_1 dup key: { teamname: "Vikings" } {"driver":true,"name":"MongoError","index":0,"code":11000,"keyPattern":{"teamname":1},"keyValue":{"teamname":"Vikings"},"timestamp":"2020-11-16T13:31:29.273Z"}
+info: START data seeder. {"timestamp":"2020-11-16T13:32:22.273Z"}
+info: END Data Seeder. Sample data read and verified. {"timestamp":"2020-11-16T13:32:22.294Z"}
+error: E11000 duplicate key error collection: hunt.teams index: teamname_1 dup key: { teamname: "Vikings" } {"driver":true,"name":"MongoError","index":0,"code":11000,"keyPattern":{"teamname":1},"keyValue":{"teamname":"Vikings"},"timestamp":"2020-11-16T13:32:22.392Z"}
+info: START data seeder. {"timestamp":"2020-11-16T13:33:46.432Z"}
+info: START data seeder. {"timestamp":"2020-11-16T13:34:37.237Z"}
+info: Model Created: { _id: 5fb27fed00ee1a2fb4eb944c, teamid: 99, teamname: 'Vikings' } {"timestamp":"2020-11-16T13:34:37.260Z"}
+info: END Data Seeder. Sample data read and verified. {"timestamp":"2020-11-16T13:34:37.262Z"}
+error: ERROR SAVING newTeam: MongoError: E11000 duplicate key error collection: hunt.teams index: teamname_1 dup key: { teamname: "Vikings" } {"timestamp":"2020-11-16T13:34:37.366Z"}
+info: START data seeder. {"timestamp":"2020-11-16T13:36:29.831Z"}
+info: Database deleted; ready for seeding. {"timestamp":"2020-11-16T13:36:29.834Z"}
+info: Model Created: { _id: 5fb2805d554fe80a9c17eeba, teamid: 99, teamname: 'Vikings' } {"timestamp":"2020-11-16T13:36:29.855Z"}
+info: END Data Seeder. Sample data read and verified. {"timestamp":"2020-11-16T13:36:29.857Z"}
+info: Data Saved: {
+  _id: 5fb2805d554fe80a9c17eeba,
+  teamid: 99,
+  teamname: 'Vikings',
+  __v: 0
+} {"timestamp":"2020-11-16T13:36:30.028Z"}

@@ -11,6 +11,8 @@ var usersRouter = require('./routes/users');
 const compression = require('compression');
 const helmet = require('helmet');
 
+const seeder = require('./util/seeder.js');
+
 var app = express();
 app.use(helmet());
 //Compress all routes
@@ -34,8 +36,11 @@ mongoose.connect(mongoDB, { useNewUrlParser: true ,useUnifiedTopology: true});
 mongoose.Promise = global.Promise;
 const db = mongoose.connection.on('connected',() =>{
   console.log('Mongoose is connected !');
+  seeder(app, db);
 });
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
